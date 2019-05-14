@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ArchiveJournalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border transparent>
+  
+  <ion-navbar color="light">
+      <ion-buttons left>
+          <button (click)="back()" ion-button icon-only >
+            <ion-icon  [color]="database.color" name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>Archive Threads</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let journal of archiveJournals">
+    <ion-item>
+      <h2>{{formatDate(journal.doc.date)}}</h2>
+      <p>{{formatTime(journal.doc.date)}}</p>
+    </ion-item>
+    <ion-card-content>
+      <h2 class="text-{{database.color}}">{{journal.doc.title}}</h2>
+      <p class="content">{{journal.doc.content}}</p>
+      <p text-right  class="text-{{database.color}}"  > <span (click)="restore(journal)" style="margin-right: 5px;">Restore</span> <span (click)="deleteJournal(journal)">Delete</span></p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

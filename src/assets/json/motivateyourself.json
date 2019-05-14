@@ -1,0 +1,32 @@
+{
+    "joy": [
+       {"title": "The only thing that will make you happy is being happy with who you are.", "img": "assets/imgs/Joy Images/eqf.jpeg", "description": "There is always one person in our life who always listen to us in ups and downs"}, 
+        {"title": "There are so many beautiful reasons to be happy.", "img": "assets/imgs/Joy Images/rth.jpeg", "description": "Waking up in the morning and see you love ones is one of the reason to smile"}, 
+        {"title":"Whoever is happy will make others happy."}, 
+        {"title":"Think happy, be happy."}
+    ],
+    "sad": [
+        {"tittle":"A negative mind will never give you a positive life, Smile!.", "img": "assets/imgs/Sad Images/j6u.jpeg", "description": "Wear your smile always, this will help  person also come up with positive vibes"}, 
+        {"tittle": "Be strong because things will get better. It maybe stormy now, but it never rains forever, Smile!.", "img": "assets/imgs/Sad Images/uyj.jpeg", "description": "Facing problems is difficult, but if you help out of yourself it means you are strong enough to handle things"}, 
+        {"tittle": "You are enough, just us you are. Smile!."},
+        {"tittle": "Don’t let yesterday take up too much of today."}
+    ],
+    "fear": [
+        {"title":"If you want to conquer fear, don’t sit home and think about it. Go out and get busy.", "img": "assets/imgs/Fear Images/images (6).jpeg", "description": "Try to become busy, do some stuff you love"}, 
+        {"title":"The fears we don’t face becomes are limits.", "img": "assets/imgs/Fear Images/images (7).jpeg", "description": "Every fear can fade away, it is not always there for us to evade. Always think that you are strong"}, 
+        {"title":"Fear are nothing more than the state of mind."}, 
+        {"title":"Never let your fear decide your future."}
+    ],
+    "disgust": [
+        {"title":"Use your imagination in a healthy way. ", "img":"assets/imgs/Disgust Images/Feeling-Good-About-Yourself.jpg", "description": "Imagination also helps you to think positively and makes you creative in well manner"}, 
+        {"title":"People can overcome disgust by individuating the other, thinking about their mind, needs, and preferences.", "img": "assets/imgs/Disgust Images/iuOOSB.jpeg", "description": "Talking with someone helps you to become stronger, strength and weaknesses may your key to become brave and strong person"}, 
+        {"title":"Disgust toward social outcasts avoids perceived moral and infectious contamination."}, 
+        {"title":"No matter how badly someone treats you, never drop down to their level. Remain calm, stay strong, and walk away."}
+    ],
+    "angry": [
+        {"title":"Anger doesn’t solve anything it builds nothing, but it can destroy everything.", "img":"assets/imgs/Angry Images/images (2).jpeg", "description": "Anger can lead to serious situation, you don’t need to become violent in this emotion, always consider the result of your actions."}, 
+        {"title": "Just because you’re angry, doesn’t mean you have the right to be cruel.", "img": "assets/imgs/Angry Images/images (3).jpeg", "description": "Cruel is bad attitude, always consider the others feeling, don’t always think about yourself"}, 
+        {"title":"Try to manage your anger since people can’t manage their stupidity."}, 
+        {"title":"For every minute you remain angry, you give up sixty seconds of peace of mind."}
+    ] 
+}

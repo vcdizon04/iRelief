@@ -1,0 +1,32 @@
+{
+    "joy": [
+        {"title":"Make your own art/drawing."}, 
+        {"title":"Finger paint."}, 
+        {"title":"Draw with your eyes close"},
+        {"title":"Draw in sand."}
+    ],
+    "sad": [
+        {"title":"Let yourself be free."}, 
+        {"title":"Do meditation."}, 
+        {"title":"Watch the sunrise."}, 
+        {"title":"Massage."}
+    ],
+    "fear": [
+        {"title":"Face your fear and embrace it."}, 
+       {"title": "Inhale and exhale relaxation."}, 
+        {"title":"Think of positive thoughts."}, 
+        {"title":"Listen to relaxing music."}
+    ],
+    "disgust": [
+        {"title":"Go for walk in nature."}, 
+        {"title":"Do deep abdominal breathing."}, 
+       {"title": "Try stress balls."}, 
+        {"title": "Hug a tree."}
+    ],
+    "angry": [
+        {"title":"Take a hot/warm shower."}, 
+        {"title":"Go for a swim."}, 
+        {"title":  "Massaging."}, 
+        {"title": "Spend time with your pets."}
+    ]
+}

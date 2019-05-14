@@ -1,0 +1,21 @@
+page-slider {
+    .cover-image {
+        background-image: url('../assets/slider/splash_background.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        img {
+            height: 125px;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .next-button {
+        background-color: transparent;
+        box-shadow: none;
+        // position: absolute;
+        // bottom: 0;
+        // right: 20px;
+    }
+}

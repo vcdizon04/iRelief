@@ -1,0 +1,79 @@
+page-about {
+  .cover {
+    min-height: 25vh;
+    // background-image: url('../assets/splash_cover.png');
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+
+    h3 {
+      margin: 0;
+      position: absolute;
+      bottom: 6vh;
+      left: 4vh;
+      text-transform: uppercase;
+    }
+  }
+
+  ion-avatar.custom {
+    margin: 0 !important;
+
+  }
+
+  button.deleteBtn {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    margin: 0;
+
+    ion-icon {
+      color: #858282;
+      font-size: 26px;
+    }
+  }
+
+  .joy {
+    color: #E77E22;
+  }
+
+  .sad {
+    color: #2C97DF;
+  }
+
+  .fear {
+    color: #7E8C8D;
+  }
+
+  .angry {
+    color: #E84C3D;   
+  }
+
+  .disgust {
+    color: #51D88B;
+  }
+  ion-badge.custom {
+    margin-right: 5px;  
+  }
+  ion-badge.custom[themecolor="blue"]{
+    background-color: #1565c0;
+  }
+  ion-badge.custom[themecolor="default"]{
+    background-color: #6200ea;
+  }
+  ion-badge.custom[themecolor="green"]{
+    background-color: #2e7d32;
+  }
+  ion-badge.custom[themecolor="red"]{
+    background-color: #c62828;
+  }
+  ion-badge.custom[themecolor="orange"]{
+    background-color: #ef6c00;
+  }
+  .card {
+    border-radius: 10px;
+    margin: 20px 10px; 
+  }
+  .time {
+    font-size: 1rem;
+  }
+ 
+}

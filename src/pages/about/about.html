@@ -1,0 +1,81 @@
+<ion-header no-border transparent>
+  <!-- <ion-navbar [color]="light">
+    <ion-title>
+      Entries
+    </ion-title>
+  </ion-navbar> -->
+  <div class="cover {{database.color}}">
+    <h3 uppercase>HI, {{name}}</h3>
+  </div>
+</ion-header>
+
+<ion-content padding>
+<!-- 
+  <ion-card (click)="selectEntry(entry.doc._id)" [color]="currentEntryId === entry.doc._id ? 'lightgrey' : 'light'" *ngFor="let entry of entries">
+    <ion-item [color]="currentEntryId === entry.id ? 'lightgrey' : 'light'"> 
+      <ion-avatar item-start>
+        <img [src]="'assets/emotions/app_' + entry.doc.emotion.toLowerCase() + '.png'">
+      </ion-avatar>
+      <h2 [class]="entry.doc.emotion.toLowerCase()" uppercase >{{entry.doc.emotion}}</h2>
+      <p>{{formatDate(entry.doc.date)}}</p>
+      <p class="time">{{formatTime(entry.doc.date)}}</p>
+      <ion-avatar class="custom" item-end>
+        <button (click)="deleteEntry(entry.doc._id, entry.doc._rev, $event)" class="deleteBtn" ion-button>
+          <ion-icon color name="trash"></ion-icon>
+        </button>
+      </ion-avatar>
+    </ion-item>
+    <ion-card-content>
+      <div margin-bottom>
+        <ion-badge class="custom" *ngFor="let activity of entry.doc.activities">{{activity}}</ion-badge>
+      </div>
+      <p  margin-bottom *ngIf="entry.doc.note.length > 0" >Note: {{entry.doc.note}}</p>
+      <p *ngIf="entry.doc.logs.length > 0">Activities you've done:</p>
+      <p  text-capitalize *ngFor="let log of entry.doc.logs"> <span>{{ log.activity }}</span><span float-right>{{formatDateActivity(log.date)}}, {{formatTime(log.date)}}</span></p>
+    </ion-card-content>
+  </ion-card> -->
+
+  
+  <ion-card  [color]="currentEntryId === entry.doc._id ? database.color : 'light'" *ngFor="let entry of entries">
+    <ion-item [color]="currentEntryId === entry.id ? database.color : 'light'"> 
+      <ion-avatar item-start>
+        <img [src]="'assets/emotions/app_' + entry.doc.emotion.toLowerCase() + '.png'">
+      </ion-avatar>
+      <h2 [class]="entry.doc.emotion.toLowerCase()" uppercase >{{entry.doc.emotion}}</h2>
+      <p>{{formatDate(entry.doc.date)}}</p>
+      <p class="time">{{formatTime(entry.doc.date)}}</p>
+      <ion-avatar class="custom" item-end>
+       
+      </ion-avatar>
+    </ion-item>
+    <ion-card-content>
+      <div margin-bottom>
+        <ion-badge [attr.themeColor]="database.color" class="custom" *ngFor="let activity of entry.doc.activities">{{activity}}</ion-badge>
+      </div>
+      <p  margin-bottom *ngIf="entry.doc.note.length > 0" >Note: {{entry.doc.note}}</p>
+      <p *ngIf="entry.doc.logs.length > 0">Activities you've done:</p>
+      <p  text-capitalize *ngFor="let log of entry.doc.logs"> <span>{{ log.activity }}</span><span float-right>{{formatDateActivity(log.date)}}, {{formatTime(log.date)}}</span></p>
+    </ion-card-content>
+  </ion-card>
+
+  
+  <ion-fab right bottom>
+    <button ion-fab [color]="database.color"><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button (click)="createJournal()" ion-fab [color]="database.color"><ion-icon name="bookmarks"></ion-icon></button>
+    </ion-fab-list>
+    <!-- <ion-fab-list side="bottom">
+      <button ion-fab [color]="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+    </ion-fab-list> -->
+    <ion-fab-list side="left">
+      <button (click)="createEntry()" ion-fab [color]="database.color">
+        <img src="assets/menu/baseline_assignment_white_18dp.png" alt="">
+      </button>
+    </ion-fab-list>
+    <!-- <ion-fab-list side="right">
+      <button ion-fab [color]="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+    </ion-fab-list> -->
+  </ion-fab>
+
+</ion-content>
+ 

@@ -1,0 +1,34 @@
+{
+    "joy": [
+        {"title": "Be with others who make you smile.", "img": "assets/imgs/Joy Images/btryj.jpeg", "description": "Smile makes you always happy and always a positive person"}, 
+        {"title": "Do things you love at most.", "img": "assets/imgs/Joy Images/qfe.jpeg", "description": "Doing stuff of what you love makes you more happy and positive"}, 
+        {"title": "Wear your smile everyday."}, 
+        {"title": "Replace a bad habit."}
+    ],
+    "sad": [
+        {"title":"Do nice stuff for yourself. Go for walks, buy flowers, eat fresh fruit.", "img": "assets/imgs/Sad Images/iStock_000068266299_Large-1.jpg", "description": "It helps a person to overcome sadness, eating fresh fruits also can boost moods and makes you healthy"}, 
+        {"title": "Dress nice. Don't wear sweat suits. Wear stuff you like, that make you feel good.", "img": "assets/imgs/Sad Images/Blonde-girl-wearing-an-elegant-white-dress-HD-picture.jpg", "description": "Wearing comfortable dress makes our moods more relax and confident and also to don’t get irritated"}, 
+        {"title": "Laugh every chance you get. It will sound strangled at first but it will come back."}, 
+        {"title": "Don't write poems about your feelings. Write about stuff that is outside you, that strengthens your curiosity. Be a reporter, not an empath."}
+    ],
+    "fear": [
+        {"title": "Take time out – The first thing to do is take time out so you can physically calm down.", "img":"assets/imgs/Fear Images/images (4).jpeg", "description": "If you are facing fear, try to calm down and always think that you are brave to face it and help to rely to others"}, 
+        {"title": "Breathe through panic - if you start to get a faster heartbeat or sweating palms, the best thing is not to fight it.", "img": "assets/imgs/Fear Images/images (5).jpeg", "description": "Breath helps your body to relax and meditate, fear is just a fear and  you have to fight and stand"}, 
+        {"title":"Face your fears - Avoiding fears only makes them scarier. Whatever your fear, if you face it, it should start to fade."}, 
+        {"title":"Talk about it - Sharing fears takes away a lot of their scariness."}
+    ],
+    "disgust": [
+        {"title":"Notice when judgmental thoughts pop into your head", "img":"assets/imgs/Disgust Images/aiush.jpeg", "description": "Just take it for yourself the things that you are thinking"}, 
+        {"title": "Don't let your feelings control your thinking.", "img":"assets/imgs/Disgust Images/jhas.jpeg", "description":"Try to balance your thoughts and emotions, it will help you to think and handle situations carefully"}, 
+        {"title":"Remember to breathe."}, 
+        {"title":"Do the opposite of what you're feeling."}, 
+        {"title":"Remember, it's not about you."}, 
+        {"title":"Talk to someone you trust about your feelings."}
+    ],
+    "angry": [
+        {"title": "Stay Safe, and Involve Others.", "img":"assets/imgs/Angry Images/images (1).jpeg", "description": "Be with others to socialize also impact your mood, forget about negative feelings, just enjoy with them"}, 
+        {"title": "Don't Respond With Anger.", "img": "assets/imgs/Angry Images/we.jpeg", "description": "Control your anger by closing your eyes and breathe several times, always calm yourself"}, 
+        {"title":"Distance Yourself Emotionally."}, 
+        {"title":"Identify the Cause."}
+    ] 
+}

@@ -1,0 +1,144 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+h1,h2,h3,h4,h5,h6,p {
+    color: #ffffff;
+}
+
+//animations
+.animate-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.animate-grow:focus,
+.animate-grow:active {
+    transform: scale(1.1);
+}
+h2.alert-title {
+    color: #222222;
+}
+// ion-title.title-md {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     padding: 0 90px 1px;
+//     width: 100%;
+//     height: 100%;
+//     text-align: center;
+//   }
+
+.visible {
+    display: inherit;
+    opacity: 1;
+    transition: opacity .5s linear;
+  }
+  .hidden {
+    display: none;
+    opacity: 0;
+    transition: visibility 0s .5s, opacity .5s linear;
+  }
+
+.default{
+    background-image:linear-gradient(#B388FF, #8C4CFA);
+} 
+.blue{
+    background-image: linear-gradient( #82B1FF , #2196F3);
+}  
+.green{
+    background-image: linear-gradient( #b9f6ca , #32db64);
+} 
+.red{
+    background-image: linear-gradient( #ff8a80 , #f53d3d);
+} 
+.orange{
+    background-image: linear-gradient( #ffd180 , #FF9800);
+}   
+
+.text-default{
+    color: #8C4CFA !important;
+}
+.text-blue{
+    color: #2196F3 !important;
+}
+.text-green{
+    color: #32db64 !important;
+}
+.text-red{
+    color: #f53d3d !important;
+}
+.text-orange{
+    color: #FF9800 !important;
+}
+
+
+.alert-button.alertColor-default{
+    color: #8C4CFA;
+}
+.alert-button.alertColor-blue{
+    color: #2196F3;
+}
+.alert-button.alertColor-green{
+    color: #32db64;
+}
+.alert-button.alertColor-red{
+    color: #f53d3d;
+}
+.alert-button.alertColor-orange{
+    color: #FF9800;
+}
+.input-has-focus[item-color="orange"]{
+    .item-inner{
+        border-bottom-color: #FF9800 !important;
+        box-shadow: inset 0 -1px 0 0 #FF9800 !important;
+    }
+    .label{
+        color: #FF9800 !important;
+    }
+}
+.input-has-focus[item-color="blue"]{
+    .item-inner{
+        border-bottom-color: #2196F3 !important;
+        box-shadow: inset 0 -1px 0 0 #2196F3 !important;
+    }
+    .label{
+        color: #2196F3 !important;
+    }
+}
+.input-has-focus[item-color="green"]{
+    .item-inner{
+        border-bottom-color: #32db64 !important;
+        box-shadow: inset 0 -1px 0 0 #32db64 !important;
+    }
+    .label{
+        color: #2196F3 !important;
+    }
+}
+.input-has-focus[item-color="red"]{
+    .item-inner{
+        border-bottom-color: #f53d3d !important;
+        box-shadow: inset 0 -1px 0 0 #f53d3d !important;
+    }
+    .label{
+        color: #2196F3 !important;
+    }
+}

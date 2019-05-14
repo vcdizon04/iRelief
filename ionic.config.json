@@ -1,0 +1,7 @@
+{
+  "name": "iRelief",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

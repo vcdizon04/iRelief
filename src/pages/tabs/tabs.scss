@@ -1,0 +1,48 @@
+page-tabs {
+        .tabs-md .tabbar{
+            background: #ffffff;
+        }
+        [coloricon="blue"]{
+            // .tabs-md .tab-button[aria-selected=true]{
+            // }
+            .tab-button[aria-selected=true]{
+                color: #2196F3;
+                .tab-button-icon{
+                    color: #2196F3;
+                }
+            }
+        }
+        [coloricon="green"]{
+            // .tabs-md .tab-button[aria-selected=true]{
+            // }
+            .tab-button[aria-selected=true]{
+                color: #32db64;
+                .tab-button-icon{
+                    color: #32db64;
+                }
+            }
+        }
+        [coloricon="red"]{
+            // .tabs-md .tab-button[aria-selected=true]{
+            // }
+            .tab-button[aria-selected=true]{
+                color: #f53d3d;
+                .tab-button-icon{
+                    color: #f53d3d;
+                }
+            }
+        }
+        [coloricon="orange"]{
+            // .tabs-md .tab-button[aria-selected=true]{
+            // }
+            .tab-button[aria-selected=true]{
+                color: #FF9800;
+                .tab-button-icon{
+                    color: #FF9800;
+                }
+            }
+        }
+        // [colorIcon="blue"]{
+        //     color: #2196F3;
+        // }
+}

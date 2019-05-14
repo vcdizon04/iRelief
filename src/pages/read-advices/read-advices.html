@@ -1,0 +1,59 @@
+<!--
+  Generated template for the ReadAdvicesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+
+  <ion-navbar transparent [color]="database.color">
+      <ion-buttons left>
+          <button (click)="view.dismiss()" ion-button icon-only >
+            <ion-icon color="light" name="arrow-back"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="cover {{database.color}}" >
+  <div *ngIf="!isYoutube">
+    <div (click)="gotoStopWatch(data)" margin-bottom class="container" *ngFor="let data of datas">
+        <p >{{data.title}}</p>
+        <img *ngIf="data.img" [src]="data.img" alt="">
+        <p *ngIf="data.description" >{{data.description}}</p>
+    </div>
+  </div>
+  <div *ngIf="title === 'LISTEN TO MUSIC'" >
+      <div text-center *ngFor="let data of datas">
+          <p>{{data.title}}</p>    
+          <audio  controlsList="nodownload" controls  height="315">
+              <source [src]="data.url" type="audio/mp3">
+            Your browser does not support the audio element.
+            </audio>
+
+      </div>
+  </div>
+  <div *ngIf="title === 'WATCH MOTIVATIONAL'" >
+      <div text-center (click)="playVideo(data.url)" *ngFor="let data of datas">
+          <p>{{data.title}}</p>   
+          <img src="assets/imgs/video-placeholder.png" alt=""> 
+          <!-- <video  allowfullscreen="true" controlsList="nodownload" controls >
+              <source [src]="data.url" type="video/mp4">
+            Your browser does not support the audio element.
+            </video> -->
+            <!-- <video width="400" controls>
+                <source [src]="data.url" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video> -->
+
+      </div>
+  </div>
+     <!-- <iframe margin-bottom *ngFor="let data of datas" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      <!-- <iframe margin-bottom *ngFor="let data of datas" [src]="formatVideo('https://www.youtube.com/embed/' + data)" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+ 
+
+</ion-content>

@@ -1,0 +1,79 @@
+<ion-header no-border transparent>
+  <ion-navbar [color]="navbarColor">
+  <ion-buttons left>
+      <button (click)="back()" ion-button icon-only >
+        <ion-icon [color]="backColor" name="arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+     {{title}}
+    </ion-title>
+    <ion-buttons *ngIf="isJournalPasswordSet && isLogin" end>
+      <button (click)="gotoArchive()" ion-button icon-only >
+        <ion-icon [color]="database.color" name="archive"></ion-icon>
+      </button>
+      <button (click)="changePassword()" ion-button icon-only >
+        <ion-icon [color]="database.color" name="settings"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar> 
+</ion-header>
+
+<ion-content padding>
+    <div *ngIf="isJournalPasswordSet && isLogin">
+        <ion-card *ngFor="let journal of journals">
+            <ion-item>
+              <h2>{{formatDate(journal.doc.date)}}</h2>
+              <p>{{formatTime(journal.doc.date)}}</p>
+            </ion-item>
+            <ion-card-content>
+              <h2 class="text-{{database.color}}">{{journal.doc.title}}</h2>
+              <p class="content">{{journal.doc.content}}</p>
+            <p text-right  class="text-{{database.color}}"  > <span style="margin-right:5px;" (click)="archive(journal)">Archive</span> <span (click)="readJournal(journal)">Read</span></p>
+            </ion-card-content>
+          </ion-card>
+        
+    
+    </div>
+
+    <div *ngIf="!isJournalPasswordSet">
+      <h6 class="grey" margin-verical text-center>In order to protect your privacy please set-up your password.</h6>
+        <ion-item>
+          <ion-label stacked >Password</ion-label>
+          <ion-input [(ngModel)]="password" type="password" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked >Confirm password</ion-label>
+            <ion-input [(ngModel)]="confirmpassword" type="password" ></ion-input>
+        </ion-item>
+        <button (click)="submitPassword()" ion-button full round margin-top >Submit</button>
+        
+    </div>
+    <div *ngIf="!isLogin && isJournalPasswordSet">
+        <h6 class="grey" margin-verical text-center>Please log-in</h6>
+          <ion-item>
+            <ion-label stacked >Password</ion-label>
+            <ion-input [(ngModel)]="password" type="password" ></ion-input>
+          </ion-item>
+          <button (click)="verifiyPassword()" ion-button [color]="database.color" full round margin-top >Login</button>
+          
+      </div>
+
+      <ion-fab *ngIf="isJournalPasswordSet && isLogin" right bottom>
+          <button ion-fab [color]="database.color"><ion-icon name="add"></ion-icon></button>
+          <ion-fab-list side="top">
+            <button (click)="createJournal()" ion-fab [color]="database.color"><ion-icon name="bookmarks"></ion-icon></button>
+          </ion-fab-list>
+          <!-- <ion-fab-list side="bottom">
+            <button ion-fab color="secondary"><ion-icon name="logo-facebook"></ion-icon></button>
+          </ion-fab-list> -->
+          <ion-fab-list side="left">
+            <button (click)="createEntry()" ion-fab [color]="database.color">
+              <img src="assets/menu/baseline_assignment_white_18dp.png" alt="">
+            </button>
+          </ion-fab-list>
+          <!-- <ion-fab-list side="right">
+            <button ion-fab color="dark"><ion-icon name="logo-twitter"></ion-icon></button>
+          </ion-fab-list> -->
+        </ion-fab>
+</ion-content>

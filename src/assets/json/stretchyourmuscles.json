@@ -1,0 +1,34 @@
+{
+    "joy": [
+       {"title": "Yoga", "img": "assets/imgs/Joy Images/rthg.jpeg", "description":"Yoga helps a person to meditate, relax and clear its mind to concentrate and to calm down"}, 
+        {"title": "Dancing", "img": "assets/imgs/Joy Images/Young-woman-dancing-in-cocktail-dress_art.jpg", "description": "Dancing is also a form of exercise that helps a person to boost energy and confidence" },
+         {"title":"Hiking"}, 
+        {"title":"Sports"}
+    ],
+    "sad": [
+        {"title":"Walking", "img":"assets/imgs/Sad Images/tujyt.jpeg", "description": "Walking exercise relaxes our muscles that increase endorphins and therefore leave you feeling pretty good about yourself"}, 
+        {"title": "Running", "img": "assets/imgs/Sad Images/AVC.Running.jpg", "description": "Running activities also helps our mental condition to reduce stress and walking as with any exercise releases stress-reducing endorphins"}, 
+        {"title":"Zumba"}, 
+       {"title": "Yoga"}
+    ],
+    "fear": [
+        {"title":"Breathing exercise", "img":"assets/imgs/Fear Images/student-yoga-1s32kw3.jpg", "description": "Breathing exercise helps you to inhale oxygen that needs of our body to circulate blood throughout our body and reduce overthinking of our fear/problems"},
+       {"title":  "Sports", "img":"assets/imgs/Fear Images/rbtuj.jpeg", "description": "Do some sports you love, don’t let yourself to be bother by fear"},
+        {"title":"Travelling"}, 
+       {"title": "Walking"}, 
+        {"title":"Hiking"}
+        
+    ],
+    "disgust": [
+        {"title":"Sports", "img":"assets/imgs/Disgust Images/LUAISB.jpeg", "description": "Boxing helps you to release disappointments and anger, also gives a healthy and nice body"}, 
+       {"title": "Bicycling", "img": "assets/imgs/Disgust Images/iuasj.jpeg", "description": "Outdoor activities like bicycling helps you to breath fresh air and also socialize with others"}, 
+        {"title": "Breathing Exercise"}, 
+        {"title":"Tai Chi"}
+    ],
+    "angry": [
+        {"title": "Boxing", "img": "assets/imgs/Angry Images/girls-boxing3.jpg", "description": "This exercise helps you to release your anger by punching through this things or any other stuff to reduce your anger"}, 
+        {"title": "Walking", "img": "assets/imgs/Angry Images/leash_walking_hero.jpg", "description": "Walking with your pet helps to calm down, do nice stuff and walk in park areas"}, 
+        {"title":"Weight Lifting"}, 
+        {"title":"Skipping Rope"}
+    ]
+}
